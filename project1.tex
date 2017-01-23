@@ -1,0 +1,51 @@
+
+\documentclass[11pt]{amsart}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{Project 1}
+\author{Mark Anderson}
+\date{January 18, 2016}
+\begin{document}
+\maketitle
+
+Let  $D=\{ x \in \mathcal{R} : x \neq 0,1\}$ and let $f$  and $g$ be functions with domain $D$, defined by
+$$f(x)= \frac{1}{x} \text{  and }   g(x)=1- x.$$  
+
+The composition of two functions $h$ and $k$, written $k \circ h$,  is the function defined by
+ $$(k \circ h)(x)=k\left(h(x)\right).$$
+
+That is, in order to compute  $(k \circ h)(x)$, one first computes $h(x)$,  and then plugs that value in for $x$ in the expression for $k(x)$.  For example,  
+$$(g \circ f)(x)=g\left(f(x)\right)=g\left(\frac{1}{x}\right)=1-\frac{1}{x}.$$  
+
+The domain of $k \circ h$ is the set of numbers $x$ such that $x$ is in the domain of $h$ and $h(x)$ is in the domain of $k$.
+
+Two functions $h$ and $k$ are said to be different, if they have different domains or if for some $x$ in their domain, $h(x) \neq k(x)$.  
+
+\begin{enumerate}
+\item What is the domain of $g \circ f$?  Of $f \circ g$?
+
+\item How many different functions can be made from $f$, $g$, and $\circ$?  Can you describe them all?
+
+\item Once you are confident with your answers to the previous questions, write a short paper (using LaTex) describing your solutions. Your paper should include
+\begin{description}
+\item [Introduction]  It should be clear early on what the goals of the paper are and how those goals will be achieved.
+
+\item	[Solution] The answer to the problem ought to be correct.
+
+\item	[Argument]  There should be a convincing argument; it should be both valid and clear.
+
+\item [Grammar]  The paper should be written in correct English.
+
+\item [Style]  The paper should flow.  The reader should never have to read a mathematical expression without knowing why it is there.
+\end{description}
+
+\end{enumerate}
+
+\end{document}
